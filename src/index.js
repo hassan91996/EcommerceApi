@@ -28,6 +28,9 @@ app.use('/categories',CategoryRoutes)
 app.use('/cart',CartRoutes)
 app.use('/orders',OrdersRoutes)
 
+app.use('/',(req,res)=>{
+    res.send("dddddddd")
+})
 
 const PORT=process.env.PORT|| 5000;
 app.listen(PORT,()=>{
